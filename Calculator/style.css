@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e3f2fd; /* Lightest Blue background */
+    font-family: sans-serif;
+}
+
+.calc {
+    background-color: #fff; /* White calculator body */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+}
+
+#display {
+    width: 95%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #42a5f5; /* Light Blue border */
+    border-radius: 4px;
+    font-size: 1.5em;
+    text-align: right;
+    color: #0d47a1; /* Dark Blue text */
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #bbdefb; /* Light Blue buttons */
+    color: #1a237e; /* Darker blue text */
+}
+
+button:hover {
+    background-color: #90caf9;
+}
+
+.equal-btn {
+    background-color: #2196f3; /* Primary Blue */
+    color: #fff; /* White text */
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 2; /* Make it taller */
+}
+
+.equal-btn:hover {
+    background-color: #1565c0;
+}
+
+.zero-btn {
+    grid-column: 1 / span 2; /* Make '0' span two columns */
+}
